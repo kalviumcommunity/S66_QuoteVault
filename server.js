@@ -1,11 +1,17 @@
 const express = require('express')
 const app = express()
 
-port = 3000
+const port = 3000
 
 app.get('/ping',(req,res)=>{
+    try{
+        res.status(200).send("pong")
+    }
+    catch{
+        console.log("Error")
+    }
 
-    res.status(200).send("pong")
+    
 
 })
 

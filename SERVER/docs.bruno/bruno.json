@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "QUOTE_VAULT",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

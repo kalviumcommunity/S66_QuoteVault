@@ -15,4 +15,4 @@ Quote Vault is a web application that allows users to share their favorite quote
 - **Rating System**: Users can rate quotes on a scale, helping highlight the most popular and impactful quotes.
 - **Profile Management**: Users can manage their profiles and see the quotes they have submitted.
 - **Search and Filter**: Users can search for quotes by keywords or filter them based on categories or ratings.
-- **Responsive Design**: The application is designed to be responsive and accessible on various devices.
+- **Responsive Design**: The application is designed to be responsive and accessible on various devices..

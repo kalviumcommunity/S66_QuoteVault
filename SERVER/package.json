@@ -2,7 +2,13 @@
   "name": "s66_quotevault",
   "version": "1.0.0",
   "description": "Quote Vault",
-  "keywords": ["express", "mongodb", "api", "authentication", "backend"],
+  "keywords": [
+    "express",
+    "mongodb",
+    "api",
+    "authentication",
+    "backend"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
   }
 }

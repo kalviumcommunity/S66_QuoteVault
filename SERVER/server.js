@@ -1,12 +1,13 @@
 const express = require('express')
 const bodyParser=require('body-parser')
 const app = express()
+require('dotenv').config();
 
 const mongoose =require('mongoose')
 const port = 4000
 
 
-mongoose.connect('mongodb://localhost:27017/quote_vault',{useNewUrlParser: true,useUnifiedTopology: true})
+mongoose.connect(process.env.MONGO_URI)
 .then(()=>console.log("MONGODB connected"))
 .catch(err=>console.log(err))
 
@@ -26,7 +27,14 @@ const user=mongoose.model('user',userschema);
 
 app.use(bodyParser.json());
 
-
+app.get('/',(req,res)=>{
+    if(mongoose.connection.readyState===1){
+        res.send("Database connected")
+    }
+    else{
+        res.send("Database not connected")
+    }
+})
 
 
 
